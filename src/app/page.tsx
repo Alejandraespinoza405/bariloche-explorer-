@@ -16,6 +16,7 @@ export default function Home() {
   <CategoryCard
     name="Alojamientos"
     image="/images/alojamiento-bariloche.jpg"
+     href="/alojamientos"
   />
 </div>
 <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:[&>article]:h-64">

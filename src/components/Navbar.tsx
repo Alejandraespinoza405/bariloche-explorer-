@@ -9,7 +9,7 @@ export function Navbar() {
 <nav className="relative flex items-center justify-between bg-white px-12 py-8 text-black">
     <p className="text-3xl font-semibold text-sky-900">Bariloche Explorer</p>
     <div className="hidden md:flex items-center gap-6">
-  <a href="#" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Alojamientos</a>
+  <a href="/alojamientos" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Alojamientos</a>
   <a href="#" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Excursiones</a>
   <a href="#" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Restaurantes</a>
   <a href="#" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Cafeterías</a>
@@ -18,8 +18,8 @@ export function Navbar() {
 </div>
 
 {menuOpen && (
-<div className="absolute top-full left-0 flex w-full flex-col gap-4 bg-white p-6 shadow-md">                
-    <a href="#" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Alojamientos</a>
+<div className="absolute top-full left-0 z-50 flex w-full flex-col gap-4 bg-white p-6 shadow-md">                
+    <a href="/alojamientos" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Alojamientos</a>
     <a href="#" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Excursiones</a>
     <a href="#" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Restaurantes</a>
     <a href="#" className="text-lg font-semibold text-slate-700 transition-colors hover:text-sky-700">Cafeterías</a>
