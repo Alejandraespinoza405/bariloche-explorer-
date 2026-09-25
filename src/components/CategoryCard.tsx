@@ -1,10 +1,14 @@
+
+import Link from "next/link";
+
 type CategoryCardProps = {
   name: string;
   image: string;
+  href?: string;
 };
 
-export function CategoryCard({ name, image }: CategoryCardProps) {
-  return (
+export function CategoryCard({ name, image, href }: CategoryCardProps) {
+  const card = (
     <article className="relative h-80 overflow-hidden">
       <img
         src={image}
@@ -17,4 +21,6 @@ export function CategoryCard({ name, image }: CategoryCardProps) {
       </h2>
     </article>
   );
+
+  return href ? <Link href={href}>{card}</Link> : card;
 }
